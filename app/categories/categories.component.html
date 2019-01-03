@@ -1,0 +1,13 @@
+<ActionBar title="Categories" class="action-bar">
+</ActionBar>
+
+<ScrollView class="page">
+    <StackLayout class="home-panel">
+        <StackLayout *ngIf="currentGeoLocation">
+            <Label text="Latitude: {{ currentGeoLocation.latitude }}"></Label>
+            <Label text="Longitude: {{ currentGeoLocation.longitude }}"></Label>
+            <Label text="Altitude: {{ currentGeoLocation.altitude }}"></Label>
+            <Label text="Direction: {{ currentGeoLocation.direction }}"></Label>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
